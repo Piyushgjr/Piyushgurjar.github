@@ -305,6 +305,103 @@ background:#1B5E20;
 
 }
 
+/*======================================================
+         RESEARCH INTERESTS & COLLABORATION
+=======================================================*/
+
+.interest-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:35px;
+
+}
+
+.interest-card{
+
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2E7D32;
+
+}
+
+.interest-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.interest-card h3{
+
+color:#2E7D32;
+margin-bottom:18px;
+font-size:22px;
+
+}
+
+.interest-card ul{
+
+padding-left:20px;
+
+}
+
+.interest-card li{
+
+margin-bottom:10px;
+
+}
+
+.collaboration{
+
+margin-top:70px;
+padding:45px;
+background:linear-gradient(135deg,#2E7D32,#43A047);
+border-radius:20px;
+color:white;
+text-align:center;
+
+}
+
+.collaboration h2{
+
+color:white;
+margin-bottom:20px;
+
+}
+
+.collaboration p{
+
+font-size:18px;
+line-height:1.8;
+margin-bottom:25px;
+
+}
+
+.contact-btn{
+
+display:inline-block;
+padding:14px 35px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+background:#E8F5E9;
+transform:translateY(-3px);
+
+}
+
 <style>
 
 *{
@@ -887,3 +984,106 @@ Visit Profile
 </div>
 
 </section>
+<!-- ===================================================== -->
+<!--          RESEARCH INTERESTS & COLLABORATION           -->
+<!-- ===================================================== -->
+
+<section id="interests">
+
+<h2>Research Interests</h2>
+
+<div class="interest-grid">
+
+<div class="interest-card">
+
+<h3>Environmental Biotechnology</h3>
+
+<ul>
+
+<li>Environmental Microbiology</li>
+
+<li>Bioremediation</li>
+
+<li>Wastewater Treatment</li>
+
+<li>Circular Bioeconomy</li>
+
+</ul>
+
+</div>
+
+<div class="interest-card">
+
+<h3>Microalgal Biotechnology</h3>
+
+<ul>
+
+<li>Microalgae Cultivation</li>
+
+<li>High-value Biomolecules</li>
+
+<li>Waste Valorisation</li>
+
+<li>Carbon Capture</li>
+
+</ul>
+
+</div>
+
+<div class="interest-card">
+
+<h3>Bioprocess Engineering</h3>
+
+<ul>
+
+<li>Fermentation Technology</li>
+
+<li>Bioreactor Operation</li>
+
+<li>Resource Recovery</li>
+
+<li>Scale-up Processes</li>
+
+</ul>
+
+</div>
+
+<div class="interest-card">
+
+<h3>Computational Biology</h3>
+
+<ul>
+
+<li>Molecular Docking</li>
+
+<li>Protein Modelling</li>
+
+<li>Bioinformatics</li>
+
+<li>Python & Data Analysis</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="collaboration">
+
+<h2>Research Collaboration</h2>
+
+<p>
+
+I welcome opportunities for research collaboration in environmental microbiology, microalgal biotechnology, sustainable bioprocess engineering, waste valorisation and computational biology. If our research interests align, I would be pleased to discuss potential collaborations, research projects or academic opportunities.
+
+</p>
+
+<a href="contact.html" class="contact-btn">
+
+Contact Me
+
+</a>
+
+</div>

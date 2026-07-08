@@ -18,14 +18,15 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 
 background:#F8FFF8;
 color:#222;
-line-height:1.7;
+line-height:1.8;
 
 }
 
@@ -37,25 +38,23 @@ margin:auto;
 
 }
 
+/*================ HEADER ================*/
+
 header{
 
 background:linear-gradient(135deg,#2E7D32,#43A047);
-
 color:white;
-
-padding:80px 10%;
+padding:80px 8%;
 
 }
 
 .hero{
 
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 flex-wrap:wrap;
+gap:60px;
 
 }
 
@@ -67,58 +66,86 @@ flex:1;
 
 .hero h1{
 
-font-size:60px;
-
+font-size:64px;
+font-weight:700;
 margin-bottom:15px;
 
 }
 
 .hero h3{
 
+font-size:28px;
 font-weight:400;
-
 margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+max-width:700px;
 
 }
 
 .photo{
 
-width:400px;
-
-height:250px;
-
-border-radius:15px;
-
+width:420px;
+height:260px;
 overflow:hidden;
-
-box-shadow:0 15px 30px rgba(0,0,0,.3);
+border-radius:18px;
+border:5px solid white;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
 
 }
 
 .photo img{
 
 width:100%;
-
 height:100%;
-
 object-fit:cover;
+transition:.4s;
 
 }
+
+.photo img:hover{
+
+transform:scale(1.05);
+
+}
+
+/*================ BUTTON ================*/
+
+.button{
+
+display:inline-block;
+margin-top:25px;
+padding:14px 35px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#E8F5E9;
+transform:translateY(-3px);
+
+}
+
+/*================ NAVIGATION ================*/
 
 nav{
 
 background:white;
-
 padding:18px;
-
 text-align:center;
-
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-
+box-shadow:0 3px 12px rgba(0,0,0,.08);
 position:sticky;
-
 top:0;
-
 z-index:1000;
 
 }
@@ -126,14 +153,11 @@ z-index:1000;
 nav a{
 
 text-decoration:none;
-
 margin:18px;
-
-font-weight:600;
-
 font-size:18px;
-
+font-weight:600;
 color:#2E7D32;
+transition:.3s;
 
 }
 
@@ -143,6 +167,8 @@ color:#1B5E20;
 
 }
 
+/*================ CONTENT ================*/
+
 section{
 
 padding:80px 0;
@@ -151,26 +177,19 @@ padding:80px 0;
 
 h2{
 
+font-size:38px;
 color:#2E7D32;
-
-margin-bottom:25px;
-
-font-size:36px;
+margin-bottom:35px;
 
 }
 
 .card{
 
 background:white;
-
 padding:35px;
-
 border-radius:15px;
-
 box-shadow:0 10px 25px rgba(0,0,0,.08);
-
 margin-bottom:30px;
-
 transition:.3s;
 
 }
@@ -178,20 +197,447 @@ transition:.3s;
 .card:hover{
 
 transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
 
+}
+
+/*================ TIMELINE ================*/
+
+.timeline{
+
+position:relative;
+margin-top:40px;
+
+}
+
+.timeline::before{
+
+content:"";
+position:absolute;
+left:90px;
+top:0;
+bottom:0;
+width:4px;
+background:#43A047;
+border-radius:10px;
+
+}
+
+.timeline-item{
+
+display:flex;
+margin-bottom:50px;
+position:relative;
+
+}
+
+.timeline-year{
+
+width:80px;
+height:80px;
+background:#2E7D32;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:bold;
+flex-shrink:0;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+z-index:2;
+
+}
+
+.timeline-content{
+
+background:white;
+margin-left:40px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+flex:1;
+transition:.3s;
+
+}
+
+.timeline-content:hover{
+
+transform:translateY(-5px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.timeline-content h3{
+
+color:#2E7D32;
+margin-bottom:10px;
+
+}
+
+.timeline-content h4{
+
+color:#666;
+font-weight:500;
+margin-bottom:15px;
+
+}
+
+/*================ RESPONSIVE ================*/
+/*======================================================
+                COURSEWORK
+=======================================================*/
+
+.course-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+
+}
+
+.course-card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.course-card:hover{
+
+transform:translateY(-8px);
 box-shadow:0 20px 35px rgba(0,0,0,.15);
 
 }
 
-.button{
+.course-card h3{
 
-display:inline-block;
+color:#2E7D32;
+margin-bottom:15px;
 
-padding:14px 35px;
+}
+
+/*======================================================
+               LAB SKILLS
+=======================================================*/
+
+.skills-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.skill-box{
+
+background:#ffffff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.skill-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.skill-box h3{
+
+color:#2E7D32;
+margin-bottom:20px;
+text-align:center;
+
+}
+
+.skill-box ul{
+
+padding-left:20px;
+
+}
+
+.skill-box li{
+
+margin-bottom:10px;
+
+}
+
+/*======================================================
+          PROFESSIONAL TRAINING
+=======================================================*/
+
+.training-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.training-card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.training-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.training-card h3{
+
+color:#2E7D32;
+margin-bottom:10px;
+
+}
+
+.training-card h4{
+
+color:#555;
+margin-bottom:15px;
+font-weight:600;
+
+}
+
+/*======================================================
+             ACADEMIC ACHIEVEMENTS
+=======================================================*/
+
+.achievement-box{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.achievement{
+
+background:#E8F5E9;
+padding:30px;
+border-left:6px solid #2E7D32;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.achievement:hover{
+
+transform:translateY(-8px);
+background:white;
+box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+}
+
+.achievement h3{
+
+color:#2E7D32;
+margin-bottom:15px;
+
+}
+
+/*======================================================
+                 CERTIFICATIONS
+=======================================================*/
+
+.certification-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.certificate{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.certificate:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.certificate h3{
+
+color:#2E7D32;
+
+margin-bottom:15px;
+
+}
+
+/*======================================================
+                 EDUCATION GALLERY
+=======================================================*/
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+/*======================================================
+                 DOWNLOAD SECTION
+=======================================================*/
+
+.download-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.download-card{
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.download-card:hover{
+
+background:#1B5E20;
+
+transform:translateY(-8px);
+
+}
+
+/*======================================================
+                CALL TO ACTION
+=======================================================*/
+
+.cta-box{
+
+background:linear-gradient(135deg,#2E7D32,#43A047);
+
+color:white;
+
+padding:60px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin:40px 0;
+
+}
+
+.cta-box h2{
+
+color:white;
+
+font-size:38px;
+
+margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+font-size:18px;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:35px;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.cta-btn{
 
 background:white;
 
 color:#2E7D32;
+
+padding:15px 35px;
 
 text-decoration:none;
 
@@ -203,49 +649,278 @@ transition:.3s;
 
 }
 
-.button:hover{
+.cta-btn:hover{
 
 background:#E8F5E9;
 
-transform:translateY(-3px);
+transform:translateY(-5px);
 
 }
 
-.hero p{
+/*======================================================
+                      FOOTER
+=======================================================*/
 
-font-size:18px;
+footer{
 
-max-width:700px;
+background:#1B5E20;
 
-}
+color:white;
 
-.hero h3{
+padding:50px 20px;
 
-font-size:28px;
-
-font-weight:400;
-
-margin-bottom:25px;
+margin-top:60px;
 
 }
 
-.hero h1{
+.footer-content{
 
-font-size:64px;
+max-width:1100px;
 
-font-weight:700;
+margin:auto;
+
+text-align:center;
+
+}
+
+.footer-content h3{
+
+font-size:30px;
 
 margin-bottom:15px;
 
 }
 
+.footer-content p{
+
+margin-bottom:20px;
+
+}
+
+.footer-social{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin:25px 0;
+
+}
+
+.footer-social img{
+
+width:42px;
+
+height:42px;
+
+transition:.3s;
+
+}
+
+.footer-social img:hover{
+
+transform:scale(1.2);
+
+}
+
+.copyright{
+
+font-size:15px;
+
+opacity:.8;
+
+margin-top:20px;
+
+}
+  
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.photo{
+
+width:100%;
+max-width:450px;
+height:auto;
+
+}
+
+.timeline::before{
+
+left:40px;
+
+}
+
+.timeline-item{
+
+flex-direction:column;
+
+}
+
+.timeline-content{
+
+margin-left:0;
+margin-top:20px;
+
+}
+
+nav a{
+
+display:inline-block;
+margin:10px;
+
+}
+
+}
+/*======================================================
+                SCROLL TO TOP BUTTON
+=======================================================*/
+
+#topBtn{
+
+display:none;
+position:fixed;
+bottom:30px;
+right:30px;
+z-index:999;
+
+background:#2E7D32;
+color:white;
+
+border:none;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+font-size:24px;
+
+cursor:pointer;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#1B5E20;
+
+transform:translateY(-5px);
+
+}
+
+/*======================================================
+              ACTIVE NAVIGATION
+=======================================================*/
+
+nav a.active{
+
+color:#1B5E20;
+
+border-bottom:3px solid #2E7D32;
+
+padding-bottom:8px;
+
+}
+
+/*======================================================
+             GENERAL IMAGE EFFECT
+=======================================================*/
+
+img{
+
+transition:.4s;
+
+}
+
+img:hover{
+
+transform:scale(1.03);
+
+}
+
+/*======================================================
+             FADE ANIMATION
+=======================================================*/
+
+.fade{
+
+animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/*======================================================
+             BETTER CARD EFFECT
+=======================================================*/
+
+.card,
+.timeline-content,
+.course-card,
+.skill-box,
+.training-card,
+.certificate,
+.stat-card{
+
+transition:.35s;
+
+}
+
+.card:hover,
+.timeline-content:hover,
+.course-card:hover,
+.skill-box:hover,
+.training-card:hover,
+.certificate:hover,
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/*======================================================
+              SECTION SPACING
+=======================================================*/
+
+section{
+
+padding-top:90px;
+
+padding-bottom:90px;
+
+}
 </style>
 
 </head>
 
 <body>
-
-<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -259,14 +934,14 @@ margin-bottom:15px;
 
 <p>
 
-My academic journey has provided me with a strong interdisciplinary foundation in microbiology, environmental biotechnology, computational biology, and sustainable bioprocess engineering. During my Integrated BS–MS programme, I developed expertise in environmental microbiology, biodegradation, molecular biology, and bioinformatics while conducting research on microbial degradation of plastic pollutants.
+My academic journey has provided a strong interdisciplinary foundation in microbiology, environmental biotechnology, computational biology, and sustainable bioprocess engineering. During my Integrated BS–MS programme, I developed expertise in environmental microbiology, biodegradation, molecular biology, bioinformatics and scientific research.
 
 </p>
 
-<br>
-
 <a href="cv/Piyush_Gurjar_CV.pdf" class="button">
+
 Download CV
+
 </a>
 
 </div>
@@ -280,8 +955,6 @@ Download CV
 </div>
 
 </header>
-
-<!-- ================= NAVIGATION ================= -->
 
 <nav>
 
@@ -305,9 +978,11 @@ Download CV
 
 <div class="container">
 
-<!-- ================= EDUCATION TIMELINE ================= -->
+<!-- ===================================================== -->
+<!--                 ACADEMIC TIMELINE                      -->
+<!-- ===================================================== -->
 
-<section>
+<section id="timeline">
 
 <h2>Academic Timeline</h2>
 
@@ -323,18 +998,17 @@ Download CV
 
 <h3>Started Integrated BS–MS in Microbiology</h3>
 
-<h4>Central University of Rajasthan</h4>
+<h4>Central University of Rajasthan, Ajmer, Rajasthan, India</h4>
 
 <p>
 
-Joined the Department of Microbiology and began developing a strong foundation in microbiology, molecular biology, genetics, biochemistry and biotechnology.
+Enrolled in the five-year Integrated BS–MS programme in Microbiology. During the initial years, I established a strong foundation in microbiology, biochemistry, genetics, molecular biology, environmental sciences, analytical chemistry, and biotechnology through both classroom learning and laboratory training.
 
 </p>
 
 </div>
 
 </div>
-
 
 <div class="timeline-item">
 
@@ -348,14 +1022,13 @@ Joined the Department of Microbiology and began developing a strong foundation i
 
 <p>
 
-Received extensive laboratory training in microbiological techniques, molecular biology, microbial cultivation, analytical instrumentation and computational biology.
+Received extensive hands-on laboratory training in microbial isolation, bacterial cultivation, media preparation, microscopy, Gram staining, PCR, DNA/RNA extraction, gel electrophoresis, microbial identification, enzyme assays, UV–Visible spectroscopy, HPLC, and various microbiological and molecular biology techniques.
 
 </p>
 
 </div>
 
 </div>
-
 
 <div class="timeline-item">
 
@@ -365,18 +1038,27 @@ Received extensive laboratory training in microbiological techniques, molecular 
 
 <div class="timeline-content">
 
-<h3>Master's Research</h3>
+<h3>Master's Thesis Research</h3>
+
+<h4>Department of Microbiology</h4>
 
 <p>
 
-Started thesis research on biodegradation of Di-(2-ethylhexyl) phthalate (DEHP) using bacterial isolates and computational analysis of Carboxylesterase Est2.
+Started my Master's dissertation entitled <b>"Bacterial Degradation of Di-(2-ethylhexyl) Phthalate (DEHP) and In Silico Analysis of Interaction with Carboxylesterase Est2."</b>
+
+</p>
+
+<br>
+
+<p>
+
+The project combined environmental microbiology with computational biology by integrating bacterial degradation experiments, protein modelling, enzyme engineering and molecular docking to understand and improve plasticizer degradation.
 
 </p>
 
 </div>
 
 </div>
-
 
 <div class="timeline-item">
 
@@ -386,11 +1068,11 @@ Started thesis research on biodegradation of Di-(2-ethylhexyl) phthalate (DEHP) 
 
 <div class="timeline-content">
 
-<h3>Graduated</h3>
+<h3>Graduation</h3>
 
 <p>
 
-Successfully completed the Integrated BS–MS programme in Microbiology with a CGPA of 7.26/10 and developed strong interdisciplinary research skills.
+Successfully completed the Integrated BS–MS programme in Microbiology with a CGPA of <b>7.26/10</b>. During the programme, I developed interdisciplinary expertise in environmental biotechnology, microbial biotechnology, computational biology, biodegradation, and sustainable bioprocesses, which now forms the foundation of my research career.
 
 </p>
 
@@ -401,3 +1083,645 @@ Successfully completed the Integrated BS–MS programme in Microbiology with a C
 </div>
 
 </section>
+
+/*======================================================
+                DEGREE OVERVIEW
+=======================================================*/
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.stat-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:0.35s;
+
+cursor:pointer;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.stat-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.stat-card h3{
+
+color:#2E7D32;
+
+font-size:24px;
+
+margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+font-size:20px;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.stat-card span{
+
+color:#666;
+
+font-size:15px;
+
+}
+
+<!-- ===================================================== -->
+<!--                  MASTER'S THESIS                       -->
+<!-- ===================================================== -->
+
+<section id="thesis">
+
+<h2>Master's Thesis</h2>
+
+<div class="card">
+
+<img src="image/DEHP.jpg" alt="Master's Thesis" class="thesis-image">
+
+<h3>
+Bacterial Degradation of Di-(2-ethylhexyl) Phthalate (DEHP) and <i>In Silico</i> Analysis of Interaction with Carboxylesterase Est2
+</h3>
+
+<br>
+
+<p>
+
+Plastic pollution has become one of the major environmental challenges worldwide. Di-(2-ethylhexyl) phthalate (DEHP) is one of the most widely used plasticizers and is frequently detected in soil and aquatic environments. The objective of this research was to investigate microbial degradation of DEHP using efficient bacterial strains and understand the molecular mechanism responsible for degradation through computational biology approaches.
+
+</p>
+
+<br>
+
+<h3>Research Objectives</h3>
+
+<ul>
+
+<li>Isolate and evaluate efficient DEHP-degrading bacterial strains.</li>
+
+<li>Compare degradation efficiency among different bacterial isolates and microbial consortia.</li>
+
+<li>Identify the key enzyme responsible for DEHP degradation.</li>
+
+<li>Construct three-dimensional protein models of Carboxylesterase Est2.</li>
+
+<li>Perform molecular docking to investigate enzyme-substrate interactions.</li>
+
+<li>Engineer enzyme variants and compare their catalytic performance computationally.</li>
+
+</ul>
+
+<br>
+
+<h3>Research Methodology</h3>
+
+<ul>
+
+<li>Isolation and cultivation of bacterial strains.</li>
+
+<li>Biodegradation experiments using DEHP as the target pollutant.</li>
+
+<li>Growth kinetics and degradation efficiency analysis.</li>
+
+<li>Protein sequence analysis and homology modelling.</li>
+
+<li>Molecular docking using AutoDock 4.2 and AutoDock Vina.</li>
+
+<li>Structural visualization using Chimera and Discovery Studio.</li>
+
+</ul>
+
+<br>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>Identified efficient bacterial strains capable of degrading DEHP.</li>
+
+<li>Observed enhanced degradation using microbial consortia.</li>
+
+<li>Identified Carboxylesterase Est2 as the major enzyme involved in degradation.</li>
+
+<li>Engineered enzyme variants showed improved substrate binding affinity during molecular docking.</li>
+
+<li>Demonstrated the usefulness of integrating microbiology with computational biology for environmental remediation.</li>
+
+</ul>
+
+<br>
+
+<h3>Laboratory Techniques Used</h3>
+
+<div class="tech-grid">
+
+<div class="tech">Microbial Isolation</div>
+
+<div class="tech">Bacterial Cultivation</div>
+
+<div class="tech">Biodegradation Studies</div>
+
+<div class="tech">HPLC Analysis</div>
+
+<div class="tech">Protein Modelling</div>
+
+<div class="tech">AutoDock Vina</div>
+
+<div class="tech">AutoDock 4.2</div>
+
+<div class="tech">Discovery Studio</div>
+
+<div class="tech">Chimera</div>
+
+<div class="tech">Bioinformatics</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--                RELEVANT COURSEWORK                    -->
+<!-- ===================================================== -->
+
+<section id="coursework">
+
+<h2>Relevant Coursework</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+<h3>Microbiology</h3>
+<p>Microbial Physiology, Microbial Genetics, Industrial Microbiology, Environmental Microbiology</p>
+</div>
+
+<div class="course-card">
+<h3>Molecular Biology</h3>
+<p>DNA Replication, Gene Expression, Recombinant DNA Technology, PCR, Molecular Techniques</p>
+</div>
+
+<div class="course-card">
+<h3>Biotechnology</h3>
+<p>Environmental Biotechnology, Enzyme Technology, Fermentation Technology, Bioprocess Engineering</p>
+</div>
+
+<div class="course-card">
+<h3>Biochemistry</h3>
+<p>Protein Chemistry, Enzymology, Metabolic Pathways, Biomolecules</p>
+</div>
+
+<div class="course-card">
+<h3>Bioinformatics</h3>
+<p>Protein Modelling, Molecular Docking, Sequence Analysis, Structural Biology</p>
+</div>
+
+<div class="course-card">
+<h3>Environmental Science</h3>
+<p>Wastewater Treatment, Pollution Control, Environmental Chemistry, Sustainability</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--          LABORATORY & RESEARCH SKILLS                 -->
+<!-- ===================================================== -->
+
+<section id="labskills">
+
+<h2>Laboratory & Research Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+
+<h3>Microbiology</h3>
+
+<ul>
+<li>Microbial Isolation & Cultivation</li>
+<li>Media Preparation</li>
+<li>Microbial Identification</li>
+<li>Growth Kinetics</li>
+<li>Biodegradation Studies</li>
+</ul>
+
+</div>
+
+<div class="skill-box">
+
+<h3>Molecular Biology</h3>
+
+<ul>
+<li>DNA Extraction</li>
+<li>PCR</li>
+<li>Gel Electrophoresis</li>
+<li>Protein Sequence Analysis</li>
+<li>Primer Understanding</li>
+</ul>
+
+</div>
+
+<div class="skill-box">
+
+<h3>Analytical Techniques</h3>
+
+<ul>
+<li>HPLC</li>
+<li>UV–Visible Spectroscopy</li>
+<li>GC-MS</li>
+<li>FTIR</li>
+<li>FESEM</li>
+</ul>
+
+</div>
+
+<div class="skill-box">
+
+<h3>Computational Biology</h3>
+
+<ul>
+<li>AutoDock Vina</li>
+<li>AutoDock 4.2</li>
+<li>SwissDock</li>
+<li>Chimera</li>
+<li>Discovery Studio</li>
+<li>Python</li>
+<li>RStudio</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--          PROFESSIONAL TRAINING & WORKSHOPS             -->
+<!-- ===================================================== -->
+
+<section id="training">
+
+<h2>Professional Training & Workshops</h2>
+
+<div class="training-grid">
+
+<div class="training-card">
+
+<h3>🌍 GIAN Course</h3>
+
+<h4>Renewable Carbon and Fuels from Organic Waste</h4>
+
+<p>
+
+Successfully completed the Global Initiative of Academic Networks (GIAN) course focusing on renewable carbon, circular bioeconomy, waste valorisation and sustainable biofuel production.
+
+</p>
+
+</div>
+
+<div class="training-card">
+
+<h3>🧪 MNIT Jaipur Workshop</h3>
+
+<h4>Advanced Materials & Biomedical Applications</h4>
+
+<p>
+
+Participated in a national workshop on synthesis and characterization of advanced functional materials for biomedical and environmental applications.
+
+</p>
+
+</div>
+
+<div class="training-card">
+
+<h3>🔬 Research Training</h3>
+
+<h4>Computational Biology</h4>
+
+<p>
+
+Received practical training in protein modelling, molecular docking, enzyme engineering and bioinformatics tools including AutoDock Vina, Chimera and Discovery Studio.
+
+</p>
+
+</div>
+
+<div class="training-card">
+
+<h3>🦠 Laboratory Training</h3>
+
+<h4>Microbiology & Biotechnology</h4>
+
+<p>
+
+Extensive laboratory experience in microbiology, molecular biology, biodegradation studies, analytical instrumentation and environmental biotechnology.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--             ACADEMIC ACHIEVEMENTS                      -->
+<!-- ===================================================== -->
+
+<section id="achievements">
+
+<h2>Academic Achievements</h2>
+
+<div class="achievement-box">
+
+<div class="achievement">
+
+<h3>📚 Research Publications</h3>
+
+<p>
+
+Published peer-reviewed research articles in internationally recognized journals on algae-based biostimulants and electrochemical sensing.
+
+</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>🧫 Master's Research</h3>
+
+<p>
+
+Successfully completed an interdisciplinary research project integrating environmental microbiology and computational biology for DEHP biodegradation.
+
+</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>🌱 Research Interests</h3>
+
+<p>
+
+Environmental Microbiology • Microalgal Biotechnology • Waste Valorisation • Circular Bioeconomy • Sustainable Bioprocess Engineering
+
+</p>
+
+</div>
+
+<div class="achievement">
+
+<h3>🔬 Technical Expertise</h3>
+
+<p>
+
+Hands-on experience in microbiology, molecular biology, analytical chemistry, computational biology and environmental biotechnology.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--                 CERTIFICATIONS                        -->
+<!-- ===================================================== -->
+
+<section id="certifications">
+
+<h2>Professional Certifications</h2>
+
+<div class="certification-grid">
+
+<div class="certificate">
+
+<h3>📜 GIAN Certification</h3>
+
+<p><b>Course:</b> Renewable Carbon and Fuels from Organic Waste</p>
+
+<p><b>Year:</b> 2025</p>
+
+<p>Successfully completed the international GIAN programme focusing on renewable carbon resources, waste valorisation and sustainable bioenergy technologies.</p>
+
+</div>
+
+<div class="certificate">
+
+<h3>🧪 Laboratory Training</h3>
+
+<p><b>Institute:</b> Central University of Rajasthan</p>
+
+<p><b>Duration:</b> BS–MS Programme</p>
+
+<p>Hands-on training in microbiology, molecular biology, environmental biotechnology and analytical instrumentation.</p>
+
+</div>
+
+<div class="certificate">
+
+<h3>💻 Computational Biology</h3>
+
+<p><b>Software:</b> AutoDock Vina, AutoDock 4.2, Chimera, Discovery Studio</p>
+
+<p>Protein modelling, molecular docking and enzyme engineering.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!--                   EDUCATION GALLERY                   -->
+<!-- ===================================================== -->
+
+<section id="gallery">
+
+<h2>Education Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="image/curaj.jpg" alt="CURaj Campus">
+
+<img src="image/lab1.jpg" alt="Laboratory">
+
+<img src="image/lab2.jpg" alt="Research">
+
+<img src="image/workshop.jpg" alt="Workshop">
+
+<img src="image/conference.jpg" alt="Conference">
+
+<img src="image/graduation.jpg" alt="Graduation">
+
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!--                 DOWNLOAD DOCUMENTS                    -->
+<!-- ===================================================== -->
+
+<section id="downloads">
+
+<h2>Academic Documents</h2>
+
+<div class="download-grid">
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="download-card">
+
+<h3>📄 Curriculum Vitae</h3>
+
+<p>Download my latest academic CV.</p>
+
+</a>
+
+<a href="documents/Transcript.pdf" class="download-card">
+
+<h3>🎓 Academic Transcript</h3>
+
+<p>Official academic transcript.</p>
+
+</a>
+
+<a href="documents/Degree.pdf" class="download-card">
+
+<h3>🏅 Degree Certificate</h3>
+
+<p>Integrated BS–MS Degree Certificate.</p>
+
+</a>
+
+<a href="documents/Thesis.pdf" class="download-card">
+
+<h3>📘 Master's Thesis</h3>
+
+<p>Download thesis (optional).</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!--              CALL TO ACTION                           -->
+<!-- ===================================================== -->
+
+<section id="cta">
+
+<div class="cta-box">
+
+<h2>Interested in My Research?</h2>
+
+<p>
+
+My academic training has provided a strong foundation in environmental microbiology, microalgal biotechnology, waste valorisation, computational biology, and sustainable bioprocess engineering. I am actively seeking opportunities to collaborate on interdisciplinary research addressing global environmental challenges.
+
+</p>
+
+<div class="cta-buttons">
+
+<a href="research.html" class="cta-btn">
+🔬 Explore My Research
+</a>
+
+<a href="publications.html" class="cta-btn">
+📚 View Publications
+</a>
+
+<a href="contact.html" class="cta-btn">
+📧 Contact Me
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Piyush Gurjar</h3>
+
+<p>
+Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste Valorisation
+</p>
+
+<div class="footer-social">
+
+<a href="https://www.linkedin.com/in/piyush-gurjar-007026311/" target="_blank">
+<img src="image/Linkedin.png" alt="LinkedIn">
+</a>
+
+<a href="https://scholar.google.com/citations?user=6r19AZgAAAAJ&hl=en" target="_blank">
+<img src="image/Google Scholar.png" alt="Google Scholar">
+</a>
+
+<a href="https://orcid.org/0009-0009-3135-6695" target="_blank">
+<img src="image/ORCID_iD.png" alt="ORCID">
+</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Piyush Gurjar. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

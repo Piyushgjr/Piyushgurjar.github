@@ -281,6 +281,513 @@ font-size:36px;
 
 }
 
+/*======================================================
+        WELCOME SECTION
+=======================================================*/
+
+.welcome{
+
+padding:80px 0;
+
+}
+
+.welcome-grid{
+
+display:grid;
+
+grid-template-columns:1.2fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.welcome-text h2{
+
+font-size:42px;
+
+color:#2E7D32;
+
+margin-bottom:25px;
+
+}
+
+.welcome-text p{
+
+font-size:18px;
+
+line-height:1.9;
+
+margin-bottom:20px;
+
+text-align:justify;
+
+}
+
+.welcome-image img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.welcome-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.home-btn{
+
+background:#2E7D32;
+
+color:white;
+
+padding:14px 30px;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.home-btn:hover{
+
+background:#1B5E20;
+
+transform:translateY(-4px);
+
+}
+
+/*======================================================
+                RESEARCH HIGHLIGHTS
+=======================================================*/
+
+.highlights{
+
+padding:80px 0;
+
+}
+
+.highlight-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.highlight-card{
+
+background:white;
+padding:35px;
+text-align:center;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-top:5px solid #2E7D32;
+transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.highlight-icon{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.highlight-card h3{
+
+color:#2E7D32;
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+.highlight-card p{
+
+color:#555;
+line-height:1.8;
+text-align:center;
+
+}
+
+/*======================================================
+                FEATURED RESEARCH
+=======================================================*/
+
+.featured{
+
+padding:80px 0;
+
+}
+
+.featured-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:35px;
+margin-top:45px;
+
+}
+
+.featured-card{
+
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.featured-card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.featured-card img{
+
+width:100%;
+height:240px;
+object-fit:cover;
+transition:.4s;
+
+}
+
+.featured-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.featured-content{
+
+padding:30px;
+
+}
+
+.featured-content h3{
+
+color:#2E7D32;
+font-size:26px;
+margin-bottom:15px;
+
+}
+
+.featured-content p{
+
+line-height:1.8;
+margin-bottom:25px;
+color:#555;
+text-align:justify;
+
+}
+
+.featured-btn{
+
+display:inline-block;
+padding:12px 28px;
+background:#2E7D32;
+color:white;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:.3s;
+
+}
+
+.featured-btn:hover{
+
+background:#1B5E20;
+
+}
+
+/*======================================================
+                LATEST PUBLICATIONS
+=======================================================*/
+
+.publication-preview{
+
+padding:80px 0;
+
+}
+
+.publication-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+gap:35px;
+margin-top:40px;
+
+}
+
+.publication-card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-left:6px solid #2E7D32;
+transition:.35s;
+
+}
+
+.publication-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.publication-year{
+
+display:inline-block;
+background:#E8F5E9;
+color:#2E7D32;
+padding:6px 16px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+margin-bottom:15px;
+
+}
+
+.publication-card h3{
+
+color:#2E7D32;
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+.publication-card p{
+
+line-height:1.8;
+text-align:justify;
+margin-bottom:20px;
+color:#555;
+
+}
+
+.publication-links{
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+.publication-btn{
+
+display:inline-block;
+padding:12px 25px;
+background:#2E7D32;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.publication-btn:hover{
+
+background:#1B5E20;
+
+}
+
+.view-all{
+
+text-align:center;
+margin-top:50px;
+
+}
+
+.view-all a{
+
+display:inline-block;
+padding:15px 35px;
+background:#2E7D32;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.view-all a:hover{
+
+background:#1B5E20;
+
+}
+
+/*======================================================
+                RESEARCH BY NUMBERS
+=======================================================*/
+
+.statistics{
+
+padding:80px 0;
+text-align:center;
+
+}
+
+.stats-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:45px;
+
+}
+
+.stat-card{
+
+background:white;
+padding:40px 25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-top:5px solid #2E7D32;
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.stat-number{
+
+font-size:52px;
+font-weight:700;
+color:#2E7D32;
+margin-bottom:10px;
+
+}
+
+.stat-title{
+
+font-size:22px;
+font-weight:600;
+margin-bottom:12px;
+color:#222;
+
+}
+
+.stat-card p{
+
+font-size:16px;
+line-height:1.7;
+color:#666;
+
+}
+
+/*======================================================
+            COLLABORATION SECTION
+=======================================================*/
+
+.collaboration{
+
+padding:90px 50px;
+margin:80px 0;
+background:linear-gradient(135deg,#2E7D32,#43A047);
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.collaboration h2{
+
+font-size:42px;
+margin-bottom:20px;
+color:white;
+
+}
+
+.collaboration p{
+
+max-width:850px;
+margin:0 auto 35px;
+font-size:18px;
+line-height:1.9;
+
+}
+
+.collaboration-buttons{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+
+}
+
+.collaboration-btn{
+
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.collaboration-btn:hover{
+
+background:#E8F5E9;
+transform:translateY(-4px);
+
+}
+
+.collaboration-btn.secondary{
+
+background:transparent;
+border:2px solid white;
+color:white;
+
+}
+
+.collaboration-btn.secondary:hover{
+
+background:white;
+color:#2E7D32;
+
+}
+  
 </style>
 
 </head>
@@ -335,210 +842,265 @@ I am a microbiologist passionate about sustainable biotechnology, environmental 
 
 <div class="container">
 
-<section id="about">
+<!--======================================================
+            WELCOME TO MY RESEARCH PORTFOLIO
+=======================================================-->
 
-<h2>About Me</h2>
+<section class="welcome">
 
-<div class="card">
+<div class="welcome-grid">
 
-<p>
+<div class="welcome-text">
 
-Currently interested in Environmental Microbiology, Waste Valorisation, Microalgal Biotechnology, Carbon Capture, Circular Bioeconomy and Sustainable Bioprocesses.
-
-I enjoy combining laboratory experimentation with computational biology to solve environmental problems.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<h3>Integrated Master of Science (BS-MS) in Microbiology</h3>
+<h2>Welcome to Piyush Gurjar's Research Portfolio</h2>
 
 <p>
 
-Central University of Rajasthan, Ajmer, Rajasthan, India
+Welcome to my academic website. Here you can explore my research journey, publications, projects and scientific contributions in environmental microbiology, environmental biotechnology, microalgal biotechnology and sustainable bioprocess engineering.
 
 </p>
 
 <p>
 
-2019 – 2024
+This website serves as a central platform to showcase my academic background, ongoing research activities and commitment to developing sustainable technologies for environmental remediation, circular bioeconomy and resource recovery.
 
 </p>
 
-<p>
+<div class="welcome-buttons">
 
-CGPA: 7.26 / 10
+<a href="about.html" class="home-btn">
 
-</p>
+About Me
 
-<br>
-
-<b>Master's Thesis</b>
-
-<p>
-
-Bacterial degradation of Di-(2-ethylhexyl) phthalate (DEHP) and in silico analysis of interaction with Carboxylesterase Est2.
-
-<p>
-    
-<li>In this study, I employed bacterial strains and their consortium for degradation of DEHP a commonly used plasticizer</li>
-<li>Further molecular analyses were done for best bacterial strain using computational techniques, then I modified the responsible enzyme and performed molecular docking to check their efficacy in wild type and engineered one</li>
-
-<p>
-
-</p>
-
-</div>
-
-</section>
-
-<section id="research">
-
-<h2>Research Interests</h2>
-
-<div class="card">
-
-<ul>
-
-<li>Environmental Microbiology</li>
-
-<li>Waste Valorisation</li>
-
-<li>Microalgal Biotechnology</li>
-
-<li>Bioremediation</li>
-
-<li>Carbon Capture and Utilisation</li>
-
-<li>Circular Bioeconomy</li>
-
-<li>Bioprocess Engineering</li>
-
-<li>Wastewater Treatment</li>
-
-<li>Microbial Biotechnology</li>
-
-<li>Computational Biology</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<section id="publications">
-
-<h2>Selected Publications</h2>
-
-<div class="card">
-
-<ol>
-
-<li>
-
-Gurjar, P., Kumar, K., Kushwah, S., Patel, A.K., Karthikeyan, O.P., Bhatia, S.K., Zuorro, A., Khare, P., Mehariya, S. (2026). Recent development in algae-based biostimulant production for sustainable agriculture: Market trend, available products, and future perspectives. <i> </i>Bioresour. Technol. Rep. <i></i> 102892. <a href="https://doi.org/10.1016/j.biteb.2026.102892" target="_blank">
-https://doi.org/10.1016/j.biteb.2026.102892
 </a>
 
-</li>
+<a href="research.html" class="home-btn">
 
-<br>
+Research Experience
 
-<li>
-
-Gangwar, A., Gurjar, P., Gupta, V. K., Dulay, S., Varjos, I., & Gupta, P. (2026). Development of CNT thin film electrodes for lead ion sensing: a step toward scalable water quality monitoring. <i> </i>Journal of Electroanalytical Chemistry <i></i>, 120284. <a href="https://doi.org/10.1016/j.jelechem.2026.120284" target="_blank">
-https://doi.org/10.1016/j.jelechem.2026.120284
 </a>
 
-</li>
+<a href="publications.html" class="home-btn">
 
-</ol>
+Publications
+
+</a>
+
+<a href="contact.html" class="home-btn">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="welcome-image">
+
+<img src="image/home-banner.jpg" alt="Environmental Biotechnology">
+
+</div>
 
 </div>
 
 </section>
 
-<section id="skills">
+<!--======================================================
+                RESEARCH HIGHLIGHTS
+=======================================================-->
 
-<h2>Technical Skills</h2>
+<section class="highlights">
 
-<div class="skills">
+<h2>Research Highlights</h2>
 
-<div class="skill">
+<p>
 
-<h3>Microbiology</h3>
+My research focuses on developing sustainable and innovative solutions through interdisciplinary approaches that integrate microbiology, biotechnology, computational biology and environmental engineering.
 
- <li>Microbial isolation</li>
+</p>
 
- <li>PCR</li>
+<div class="highlight-grid">
 
- <li>DNA/RNA Isolation</li>
+<div class="highlight-card">
 
- <li>Gel Electrophoresis</li>
+<div class="highlight-icon">🧫</div>
 
- <li>Antibiotic Resistance</li>
+<h3>Environmental Microbiology</h3>
 
-</div>
+<p>
 
-<div class="skill">
+Exploring microbial diversity and biodegradation processes for environmental sustainability.
 
-<h3>Bioprocess</h3>
-
-<li>Bioreactor</li>
-
-<li>Waste Valorisation</li>
-
-<li>Microalgae</li>
-
-<li>Carbon Capture</li>
-
-<li>Wastewater Treatment</li>
+</p>
 
 </div>
 
-<div class="skill">
+<div class="highlight-card">
 
-<h3>Analytical</h3>
+<div class="highlight-icon">🌱</div>
 
-<li>HPLC</li>
+<h3>Microalgal Biotechnology</h3>
 
-<li>GC-MS</li>
+<p>
 
-<li>FTIR</li>
+Harnessing microalgae for biomass production, wastewater treatment and valuable bioproducts.
 
-<li>UV-Vis</li>
-
-<li>FESEM</li>
-
-<li>DSC</li>
+</p>
 
 </div>
 
-<div class="skill">
+<div class="highlight-card">
+
+<div class="highlight-icon">♻️</div>
+
+<h3>Waste Valorisation</h3>
+
+<p>
+
+Converting industrial and agricultural wastes into sustainable bio-based products.
+
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<div class="highlight-icon">💻</div>
 
 <h3>Computational Biology</h3>
 
-<li>AutoDock Vina and 4.2</li>
+<p>
 
-<li>SwissDock</li>
+Applying molecular docking, protein modelling and bioinformatics to solve biological problems.
 
-<li>Modeller</li>
+</p>
 
-<li>Discovery Studio</li>
+</div>
 
-<li>Chimera</li>
+<div class="highlight-card">
 
-<li>Python</li>
+<div class="highlight-icon">🧪</div>
 
-<li>RStudio</li>
+<h3>Environmental Biotechnology</h3>
+
+<p>
+
+Developing eco-friendly technologies for pollution remediation and resource recovery.
+
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<div class="highlight-icon">🌍</div>
+
+<h3>Circular Bioeconomy</h3>
+
+<p>
+
+Promoting sustainable bioprocesses that support a circular and resource-efficient economy.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                FEATURED RESEARCH
+=======================================================-->
+
+<section class="featured">
+
+<h2>Featured Research</h2>
+
+<p>
+
+Discover some of the key research projects that define my work in environmental biotechnology, sustainable bioprocesses and computational biology.
+
+</p>
+
+<div class="featured-grid">
+
+<!--================ Project 1 =================-->
+
+<div class="featured-card">
+
+<img src="image/dehp-home.jpg" alt="DEHP Biodegradation">
+
+<div class="featured-content">
+
+<h3>DEHP Biodegradation</h3>
+
+<p>
+
+Investigating bacterial degradation of Di-(2-ethylhexyl) phthalate (DEHP) through microbial biotechnology, enzyme engineering and molecular docking approaches.
+
+</p>
+
+<a href="research.html" class="featured-btn">
+
+Learn More →
+
+</a>
+
+</div>
+
+</div>
+
+<!--================ Project 2 =================-->
+
+<div class="featured-card">
+
+<img src="image/algae-home.jpg" alt="Microalgae">
+
+<div class="featured-content">
+
+<h3>Microalgal Biotechnology</h3>
+
+<p>
+
+Developing sustainable microalgal processes for waste valorisation, wastewater treatment, biomass production and circular bioeconomy applications.
+
+</p>
+
+<a href="research.html" class="featured-btn">
+
+Learn More →
+
+</a>
+
+</div>
+
+</div>
+
+<!--================ Project 3 =================-->
+
+<div class="featured-card">
+
+<img src="image/sensor-home.jpg" alt="Electrochemical Sensors">
+
+<div class="featured-content">
+
+<h3>Electrochemical Sensors</h3>
+
+<p>
+
+Designing carbon nanomaterial-based electrochemical sensors for environmental monitoring and sensitive detection of heavy metal ions.
+
+</p>
+
+<a href="research.html" class="featured-btn">
+
+Learn More →
+
+</a>
+
+</div>
 
 </div>
 
@@ -547,6 +1109,232 @@ https://doi.org/10.1016/j.jelechem.2026.120284
 </section>
 
 </div>
+
+<!--======================================================
+                LATEST PUBLICATIONS
+=======================================================-->
+
+<section class="publication-preview">
+
+<h2>Latest Publications</h2>
+
+<p>
+
+A selection of recent peer-reviewed publications highlighting my research contributions in environmental biotechnology, sustainable agriculture and electrochemical sensing.
+
+</p>
+
+<div class="publication-grid">
+
+<!--================ Publication 1 =================-->
+
+<div class="publication-card">
+
+<div class="publication-year">
+
+2026
+
+</div>
+
+<h3>
+
+Algae-Based Biostimulants for Sustainable Agriculture
+
+</h3>
+
+<p>
+
+Published in <b>Bioresource Technology Reports</b>, this review explores recent developments in algae-based biostimulants, market trends, commercial products and future perspectives for sustainable agriculture.
+
+</p>
+
+<div class="publication-links">
+
+<a href="https://doi.org/10.1016/j.biteb.2026.102892" target="_blank" class="publication-btn">
+
+View DOI
+
+</a>
+
+</div>
+
+</div>
+
+<!--================ Publication 2 =================-->
+
+<div class="publication-card">
+
+<div class="publication-year">
+
+2026
+
+</div>
+
+<h3>
+
+CNT Thin Film Electrodes for Lead Ion Detection
+
+</h3>
+
+<p>
+
+Published in the <b>Journal of Electroanalytical Chemistry</b>, this work presents scalable carbon nanotube thin-film electrodes for sensitive electrochemical detection of lead ions.
+
+</p>
+
+<div class="publication-links">
+
+<a href="https://doi.org/10.1016/j.jelechem.2026.120284" target="_blank" class="publication-btn">
+
+View DOI
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="view-all">
+
+<a href="publications.html">
+
+View All Publications →
+
+</a>
+
+</div>
+
+</section>
+
+<!--======================================================
+                RESEARCH BY NUMBERS
+=======================================================-->
+
+<section class="statistics">
+
+<h2>Research by Numbers</h2>
+
+<p>
+
+A snapshot of my academic journey, research experience and scientific contributions.
+
+</p>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<div class="stat-number">2+</div>
+
+<div class="stat-title">
+
+Publications
+
+</div>
+
+<p>
+
+Peer-reviewed publications in international scientific journals.
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">3</div>
+
+<div class="stat-title">
+
+Research Institutions
+
+</div>
+
+<p>
+
+Research experience across universities and national research laboratories.
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">20+</div>
+
+<div class="stat-title">
+
+Laboratory Techniques
+
+</div>
+
+<p>
+
+Microbiology, analytical chemistry, electrochemistry and computational biology.
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">6+</div>
+
+<div class="stat-title">
+
+Research Areas
+
+</div>
+
+<p>
+
+Environmental microbiology, biotechnology, microalgae, waste valorisation and more.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+            LET'S BUILD A SUSTAINABLE FUTURE TOGETHER
+=======================================================-->
+
+<section>
+
+<div class="collaboration">
+
+<h2>Let's Build a Sustainable Future Together</h2>
+
+<p>
+
+Thank you for visiting my research portfolio. I am always interested in collaborating with researchers, universities and industry partners working in environmental biotechnology, microbiology, microalgal biotechnology, sustainable bioprocess engineering and circular bioeconomy. Whether you are looking for a research collaborator, a motivated PhD candidate or wish to discuss innovative scientific ideas, I would be delighted to connect.
+
+</p>
+
+<div class="collaboration-buttons">
+
+<a href="contact.html" class="collaboration-btn">
+
+Contact Me
+
+</a>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="collaboration-btn secondary">
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- ===================== FOOTER ===================== -->
 

@@ -1,1 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research Experience | Piyush Gurjar</title>
+
+<link rel="icon" type="image/png" href="image/WhatsApp.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#F8FFF8;
+color:#222;
+line-height:1.8;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+/*======================================================
+HEADER
+=======================================================*/
+
+header{
+
+background:linear-gradient(135deg,#2E7D32,#43A047);
+color:white;
+padding:80px 8%;
+
+}
+
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:60px;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero h1{
+
+font-size:64px;
+margin-bottom:15px;
+
+}
+
+.hero h3{
+
+font-size:28px;
+font-weight:400;
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:18px;
+max-width:700px;
+
+}
+
+.photo{
+
+width:420px;
+height:300px;
+border-radius:18px;
+overflow:hidden;
+border:6px solid white;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.photo img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.button{
+
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#E8F5E9;
+
+}
+
+/*======================================================
+NAVIGATION
+=======================================================*/
+
+nav{
+
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin:18px;
+font-size:18px;
+font-weight:600;
+color:#2E7D32;
+
+}
+
+nav a:hover{
+
+color:#1B5E20;
+
+}
+
+nav a.active{
+
+border-bottom:3px solid #2E7D32;
+padding-bottom:8px;
+
+}
+
+/*======================================================
+GENERAL
+=======================================================*/
+
+section{
+
+padding:80px 0;
+
+}
+
+h2{
+
+color:#2E7D32;
+font-size:38px;
+margin-bottom:30px;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+/*======================================================
+                RESEARCH TIMELINE
+=======================================================*/
+
+.timeline{
+
+position:relative;
+margin-top:40px;
+padding-left:40px;
+
+}
+
+.timeline::before{
+
+content:"";
+position:absolute;
+left:15px;
+top:0;
+width:4px;
+height:100%;
+background:#2E7D32;
+border-radius:5px;
+
+}
+
+.timeline-item{
+
+position:relative;
+margin-bottom:45px;
+
+}
+
+.timeline-dot{
+
+position:absolute;
+left:-34px;
+top:12px;
+width:18px;
+height:18px;
+background:#2E7D32;
+border:4px solid white;
+border-radius:50%;
+box-shadow:0 0 0 3px #2E7D32;
+
+}
+
+.timeline-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.timeline-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.timeline-card h3{
+
+color:#2E7D32;
+font-size:28px;
+margin-bottom:8px;
+
+}
+
+.timeline-card h4{
+
+color:#666;
+font-weight:500;
+margin-bottom:18px;
+
+}
+
+.timeline-card p{
+
+text-align:justify;
+margin-bottom:18px;
+
+}
+
+.timeline-card ul{
+
+padding-left:22px;
+
+}
+
+.timeline-card li{
+
+margin-bottom:10px;
+
+}
+
+/*======================================================
+                MAJOR RESEARCH PROJECTS
+=======================================================*/
+
+.project-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.project-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2E7D32;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.project-card h3{
+
+color:#2E7D32;
+font-size:26px;
+margin-bottom:15px;
+
+}
+
+.project-duration{
+
+display:inline-block;
+background:#E8F5E9;
+color:#2E7D32;
+padding:6px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+margin-bottom:18px;
+
+}
+
+.project-card p{
+
+text-align:justify;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.project-card ul{
+
+padding-left:22px;
+
+}
+
+.project-card li{
+
+margin-bottom:10px;
+
+}
+
+/*======================================================
+            LABORATORY & RESEARCH TECHNIQUES
+=======================================================*/
+
+.technique-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.technique-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-top:5px solid #2E7D32;
+transition:.35s;
+
+}
+
+.technique-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.technique-icon{
+
+font-size:48px;
+margin-bottom:20px;
+
+}
+
+.technique-card h3{
+
+color:#2E7D32;
+font-size:24px;
+margin-bottom:20px;
+
+}
+
+.technique-card ul{
+
+padding-left:22px;
+
+}
+
+.technique-card li{
+
+margin-bottom:10px;
+line-height:1.7;
+
+}
+
+/*======================================================
+      RESEARCH OUTCOMES & SCIENTIFIC CONTRIBUTIONS
+=======================================================*/
+
+.outcome-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.outcome-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-left:6px solid #2E7D32;
+
+}
+
+.outcome-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.outcome-icon{
+
+font-size:50px;
+margin-bottom:18px;
+
+}
+
+.outcome-card h3{
+
+color:#2E7D32;
+font-size:24px;
+margin-bottom:18px;
+
+}
+
+.outcome-card p{
+
+line-height:1.8;
+text-align:justify;
+margin-bottom:18px;
+
+}
+
+.outcome-card ul{
+
+padding-left:22px;
+
+}
+
+.outcome-card li{
+
+margin-bottom:10px;
+
+}
+
+/*======================================================
+        RESEARCH IMPACT & FUTURE DIRECTIONS
+=======================================================*/
+
+.impact-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:35px;
+margin-top:40px;
+
+}
+
+.impact-card{
+
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2E7D32;
+
+}
+
+.impact-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.impact-card h3{
+
+color:#2E7D32;
+font-size:28px;
+margin-bottom:20px;
+
+}
+
+.impact-card p{
+
+font-size:17px;
+line-height:1.9;
+text-align:justify;
+margin-bottom:20px;
+
+}
+
+.impact-card ul{
+
+padding-left:22px;
+
+}
+
+.impact-card li{
+
+margin-bottom:12px;
+line-height:1.8;
+
+}
+
+/*======================================================
+        RESEARCH COLLABORATION
+=======================================================*/
+
+.collaboration{
+
+margin-top:60px;
+padding:60px;
+background:linear-gradient(135deg,#2E7D32,#43A047);
+border-radius:20px;
+color:white;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.collaboration h2{
+
+color:white;
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+.collaboration p{
+
+font-size:18px;
+line-height:1.9;
+max-width:900px;
+margin:0 auto 40px;
+
+}
+
+.collaboration-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-bottom:40px;
+
+}
+
+.collaboration-card{
+
+background:rgba(255,255,255,.12);
+padding:25px;
+border-radius:15px;
+transition:.3s;
+backdrop-filter:blur(5px);
+
+}
+
+.collaboration-card:hover{
+
+background:rgba(255,255,255,.22);
+transform:translateY(-8px);
+
+}
+
+.collaboration-card h3{
+
+margin-bottom:15px;
+font-size:22px;
+
+}
+
+.collaboration-card p{
+
+font-size:16px;
+margin:0;
+line-height:1.7;
+
+}
+
+.contact-button{
+
+display:inline-block;
+padding:15px 40px;
+background:white;
+color:#2E7D32;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.contact-button:hover{
+
+background:#E8F5E9;
+transform:translateY(-4px);
+
+}
+
+/*======================================================
+                RESEARCH AT A GLANCE
+=======================================================*/
+
+.glance{
+
+padding:70px 0;
+
+}
+
+.glance-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.glance-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2E7D32;
+
+}
+
+.glance-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.glance-number{
+
+font-size:52px;
+font-weight:700;
+color:#2E7D32;
+margin-bottom:15px;
+
+}
+
+.glance-title{
+
+font-size:22px;
+font-weight:600;
+margin-bottom:10px;
+
+}
+
+.glance-card p{
+
+color:#666;
+font-size:15px;
+line-height:1.7;
+
+}
+
+/*======================================================
+      PROFESSIONAL DEVELOPMENT & ACADEMIC ENGAGEMENT
+=======================================================*/
+
+.engagement{
+
+margin-top:70px;
+
+}
+
+.engagement-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+margin-top:35px;
+
+}
+
+.engagement-card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-left:6px solid #2E7D32;
+
+}
+
+.engagement-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.engagement-card h3{
+
+color:#2E7D32;
+margin-bottom:20px;
+font-size:25px;
+
+}
+
+.engagement-card ul{
+
+padding-left:22px;
+
+}
+
+.engagement-card li{
+
+margin-bottom:12px;
+line-height:1.8;
+
+}
+
+/*======================================================
+                      FOOTER
+=======================================================*/
+
+footer{
+
+background:#1B5E20;
+color:white;
+width:100%;
+padding:60px 0 30px;
+margin-top:70px;
+
+}
+
+.footer-content{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.footer-content h3{
+
+font-size:32px;
+font-weight:600;
+margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+font-size:17px;
+margin:10px 0;
+line-height:1.7;
+
+}
+
+.footer-social{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+margin:30px 0;
+
+}
+
+.footer-social img{
+
+width:45px;
+height:45px;
+transition:.3s;
+
+}
+
+.footer-social img:hover{
+
+transform:scale(1.15);
+
+}
+
+.copyright{
+
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.25);
+font-size:15px;
+opacity:.85;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container hero">
+
+<div class="hero-text">
+
+<h1>Research Experience</h1>
+
+<h3>Environmental Biotechnology • Microbiology • Microalgal Biotechnology • Sustainable Bioprocess Engineering</h3>
+
+<p>
+
+My research experience spans environmental microbiology, biodegradation, microalgal biotechnology, waste valorisation, electrochemical sensing and computational biology. Through multidisciplinary projects at leading research institutes, I have developed expertise in translating scientific research into sustainable environmental technologies.
+
+</p>
+
+<a href="cv/Piyush_Gurjar_CV.pdf" class="button">
+
+Download CV
+
+</a>
+
+</div>
+
+<div class="photo">
+
+<img src="image/laboratory.jpg" alt="Research Laboratory">
+
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="education.html">Education</a>
+
+<a href="research.html" class="active">Research Experience</a>
+
+<a href="publications.html">Publications</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<!--======================================================
+                RESEARCH EXPERIENCE
+=======================================================-->
+
+<section>
+
+<h2>Research Experience</h2>
+
+<div class="timeline">
+
+<!-- ===================== CSIR ===================== -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<h3>Project Associate–I</h3>
+
+<h4>CSIR–Central Institute of Medicinal and Aromatic Plants (CSIR-CIMAP), Lucknow | 2024 – Present</h4>
+
+<p>
+
+Currently working in the Bioprocess Laboratory, Phytochemistry Division under the CSIR Aroma Mission. My research focuses on sustainable utilisation of aromatic plant processing residues through microbial and microalgal biotechnology.
+
+</p>
+
+<b>Major Research Areas</b>
+
+<ul>
+
+<li>Bioprocess engineering for waste valorisation.</li>
+
+<li>Production of microalgal biostimulants.</li>
+
+<li>Microalgae cultivation and biomass production.</li>
+
+<li>Hydrodistillation waste utilisation.</li>
+
+<li>Wastewater treatment and resource recovery.</li>
+
+<li>Bioreactor operation and process optimisation.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- ===================== CURAJ ===================== -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<h3>Master's Thesis Research</h3>
+
+<h4>Central University of Rajasthan | 2023 – 2024</h4>
+
+<p>
+
+Conducted research on microbial degradation of Di-(2-ethylhexyl) phthalate (DEHP), integrating experimental microbiology with computational biology to investigate enzyme-substrate interactions.
+
+</p>
+
+<b>Research Highlights</b>
+
+<ul>
+
+<li>Isolation and evaluation of bacterial degraders.</li>
+
+<li>Biodegradation studies using bacterial consortium.</li>
+
+<li>HPLC-based degradation analysis.</li>
+
+<li>Molecular docking using AutoDock 4.2 and AutoDock Vina.</li>
+
+<li>Protein modelling and enzyme engineering.</li>
+
+<li>Computational analysis using Discovery Studio and UCSF Chimera.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<!-- ===================== DST PROJECT ===================== -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<h3>Research Associate</h3>
+
+<h4>Electroanalytical & Bio-electrochemistry Laboratory | DST-INSPIRE Project</h4>
+
+<p>
+
+Worked on the development of carbon nanomaterial-based electrochemical sensors for environmental monitoring and biomedical applications.
+
+</p>
+
+<b>Research Activities</b>
+
+<ul>
+
+<li>Fabrication of carbon nanotube electrodes.</li>
+
+<li>Heavy metal ion sensing.</li>
+
+<li>Electrochemical detection of biomolecules.</li>
+
+<li>Voltammetry and amperometric measurements.</li>
+
+<li>Metrohm Autolab and PalmSens instrumentation.</li>
+
+<li>Data analysis and sensor characterisation.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+                MAJOR RESEARCH PROJECTS
+=======================================================-->
+
+<section>
+
+<h2>Major Research Projects</h2>
+
+<div class="project-grid">
+
+<!--================ Project 1 ================-->
+
+<div class="project-card">
+
+<h3>Valorisation of Aromatic Plant Processing Waste</h3>
+
+<div class="project-duration">
+
+CSIR-CIMAP • 2024 – Present
+
+</div>
+
+<p>
+
+Working on sustainable utilisation of aromatic plant processing residues through microbial and microalgal biotechnology. The project aims to convert industrial waste into high-value products supporting the circular bioeconomy.
+
+</p>
+
+<b>Research Components</b>
+
+<ul>
+
+<li>Waste characterisation</li>
+
+<li>Microalgae cultivation</li>
+
+<li>Biostimulant production</li>
+
+<li>Bioprocess optimisation</li>
+
+<li>Resource recovery</li>
+
+<li>Sustainable agriculture</li>
+
+</ul>
+
+</div>
+
+<!--================ Project 2 ================-->
+
+<div class="project-card">
+
+<h3>Biodegradation of DEHP using Bacterial Isolates</h3>
+
+<div class="project-duration">
+
+Master's Thesis • 2023–2024
+
+</div>
+
+<p>
+
+Investigated microbial degradation of Di-(2-ethylhexyl) phthalate (DEHP) using bacterial isolates and their consortium. Computational biology was integrated to study enzyme–substrate interactions and improve degradation efficiency.
+
+</p>
+
+<b>Research Components</b>
+
+<ul>
+
+<li>Isolation of bacterial degraders</li>
+
+<li>Biodegradation experiments</li>
+
+<li>HPLC analysis</li>
+
+<li>Protein modelling</li>
+
+<li>Molecular docking</li>
+
+<li>Enzyme engineering</li>
+
+</ul>
+
+</div>
+
+<!--================ Project 3 ================-->
+
+<div class="project-card">
+
+<h3>Electrochemical Sensor Development</h3>
+
+<div class="project-duration">
+
+DST-INSPIRE Project
+
+</div>
+
+<p>
+
+Developed carbon nanotube-based electrochemical sensors for sensitive detection of heavy metals and biomolecules in environmental and biological samples.
+
+</p>
+
+<b>Research Components</b>
+
+<ul>
+
+<li>CNT electrode fabrication</li>
+
+<li>Lead ion sensing</li>
+
+<li>Electrochemical characterisation</li>
+
+<li>Voltammetry</li>
+
+<li>Amperometry</li>
+
+<li>Sensor optimisation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+        LABORATORY & RESEARCH TECHNIQUES
+=======================================================-->
+
+<section>
+
+<h2>Laboratory & Research Techniques</h2>
+
+<div class="technique-grid">
+
+<!--================ Microbiology =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">🦠</div>
+
+<h3>Microbiology</h3>
+
+<ul>
+
+<li>Microbial isolation and cultivation</li>
+
+<li>Pure culture maintenance</li>
+
+<li>Growth kinetics</li>
+
+<li>Biodegradation studies</li>
+
+<li>Microbial consortium development</li>
+
+</ul>
+
+</div>
+
+<!--================ Molecular Biology =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">🧬</div>
+
+<h3>Molecular Biology</h3>
+
+<ul>
+
+<li>DNA & RNA isolation</li>
+
+<li>PCR</li>
+
+<li>Gel electrophoresis</li>
+
+<li>Sequence analysis</li>
+
+<li>Primer handling</li>
+
+</ul>
+
+</div>
+
+<!--================ Analytical =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">⚗️</div>
+
+<h3>Analytical Techniques</h3>
+
+<ul>
+
+<li>HPLC</li>
+
+<li>GC-MS</li>
+
+<li>UV-Visible Spectroscopy</li>
+
+<li>FTIR</li>
+
+<li>FESEM</li>
+
+</ul>
+
+</div>
+
+<!--================ Computational =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">💻</div>
+
+<h3>Computational Biology</h3>
+
+<ul>
+
+<li>AutoDock Vina</li>
+
+<li>AutoDock 4.2</li>
+
+<li>PyRx</li>
+
+<li>Discovery Studio</li>
+
+<li>UCSF Chimera</li>
+
+<li>Python</li>
+
+</ul>
+
+</div>
+
+<!--================ Bioprocess =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">🏭</div>
+
+<h3>Bioprocess Engineering</h3>
+
+<ul>
+
+<li>Bioreactor operation</li>
+
+<li>Microalgae cultivation</li>
+
+<li>Waste valorisation</li>
+
+<li>Resource recovery</li>
+
+<li>Bioprocess optimisation</li>
+
+</ul>
+
+</div>
+
+<!--================ Electrochemistry =================-->
+
+<div class="technique-card">
+
+<div class="technique-icon">📈</div>
+
+<h3>Electrochemical Techniques</h3>
+
+<ul>
+
+<li>Voltammetry</li>
+
+<li>Amperometry</li>
+
+<li>CNT electrode fabrication</li>
+
+<li>Heavy metal sensing</li>
+
+<li>Metrohm Autolab</li>
+
+<li>PalmSens</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+        RESEARCH OUTCOMES & SCIENTIFIC CONTRIBUTIONS
+=======================================================-->
+
+<section>
+
+<h2>Research Outcomes & Scientific Contributions</h2>
+
+<div class="outcome-grid">
+
+<!--================ Publications =================-->
+
+<div class="outcome-card">
+
+<div class="outcome-icon">📚</div>
+
+<h3>Scientific Publications</h3>
+
+<p>
+
+Published peer-reviewed research articles in international journals covering environmental biotechnology, algae-based biostimulants and electrochemical sensor development.
+
+</p>
+
+<ul>
+
+<li>Bioresource Technology Reports</li>
+
+<li>Journal of Electroanalytical Chemistry</li>
+
+</ul>
+
+</div>
+
+<!--================ Sustainability =================-->
+
+<div class="outcome-card">
+
+<div class="outcome-icon">🌱</div>
+
+<h3>Sustainability Impact</h3>
+
+<p>
+
+Research focused on developing sustainable technologies that promote waste utilisation, circular bioeconomy and environmentally friendly industrial practices.
+
+</p>
+
+<ul>
+
+<li>Waste Valorisation</li>
+
+<li>Circular Bioeconomy</li>
+
+<li>Resource Recovery</li>
+
+<li>Sustainable Agriculture</li>
+
+</ul>
+
+</div>
+
+<!--================ Innovation =================-->
+
+<div class="outcome-card">
+
+<div class="outcome-icon">💡</div>
+
+<h3>Research Innovation</h3>
+
+<p>
+
+Integrated experimental microbiology with computational biology and environmental engineering to address complex environmental challenges.
+
+</p>
+
+<ul>
+
+<li>Microbial Biotechnology</li>
+
+<li>Microalgal Biotechnology</li>
+
+<li>Computational Biology</li>
+
+<li>Electrochemical Sensors</li>
+
+</ul>
+
+</div>
+
+<!--================ Skills Developed =================-->
+
+<div class="outcome-card">
+
+<div class="outcome-icon">🚀</div>
+
+<h3>Professional Development</h3>
+
+<p>
+
+Developed multidisciplinary research expertise through collaborative projects involving microbiology, analytical chemistry, bioprocess engineering and bioinformatics.
+
+</p>
+
+<ul>
+
+<li>Scientific Writing</li>
+
+<li>Project Management</li>
+
+<li>Laboratory Research</li>
+
+<li>Data Analysis</li>
+
+<li>Interdisciplinary Collaboration</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+        RESEARCH IMPACT & FUTURE DIRECTIONS
+=======================================================-->
+
+<section>
+
+<h2>Research Impact & Future Directions</h2>
+
+<div class="impact-grid">
+
+<!--================ Scientific Impact ================-->
+
+<div class="impact-card">
+
+<h3>Scientific Impact</h3>
+
+<p>
+
+My research aims to bridge microbiology, environmental biotechnology and engineering to develop sustainable solutions for pollution control, waste valorisation and renewable resource generation. By integrating experimental and computational approaches, I seek to advance environmentally responsible technologies with practical applications.
+
+</p>
+
+<ul>
+
+<li>Environmental pollution remediation</li>
+
+<li>Sustainable waste management</li>
+
+<li>Circular bioeconomy</li>
+
+<li>Microbial resource recovery</li>
+
+<li>Microalgal biotechnology</li>
+
+<li>Industrial sustainability</li>
+
+</ul>
+
+</div>
+
+<!--================ Future Research ================-->
+
+<div class="impact-card">
+
+<h3>Future Research Directions</h3>
+
+<p>
+
+I aim to pursue interdisciplinary research addressing global environmental challenges through advanced microbiology, computational biology and sustainable bioprocess engineering. My long-term objective is to contribute to innovative technologies supporting climate resilience, environmental restoration and sustainable industrial development.
+
+</p>
+
+<ul>
+
+<li>Environmental Biotechnology</li>
+
+<li>Carbon Capture & Utilisation</li>
+
+<li>Advanced Waste Valorisation</li>
+
+<li>AI-assisted Computational Biology</li>
+
+<li>Microbial Bioprocess Engineering</li>
+
+<li>International Research Collaboration</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+            RESEARCH COLLABORATION
+=======================================================-->
+
+<section>
+
+<div class="collaboration">
+
+<h2>Research Collaboration</h2>
+
+<p>
+
+I am always interested in collaborating with researchers, universities, research institutes and industry partners working in environmental biotechnology, microbiology, sustainable bioprocess engineering and computational biology. I welcome opportunities for interdisciplinary research, international collaborations and funded PhD projects that contribute to sustainable environmental solutions.
+
+</p>
+
+<div class="collaboration-grid">
+
+<div class="collaboration-card">
+
+<h3>🔬 Research Projects</h3>
+
+<p>
+
+Collaborative research in environmental microbiology, bioprocess engineering, waste valorisation and sustainable biotechnology.
+
+</p>
+
+</div>
+
+<div class="collaboration-card">
+
+<h3>🌍 International Collaboration</h3>
+
+<p>
+
+Interested in multidisciplinary collaborations with universities, research institutes and industrial partners worldwide.
+
+</p>
+
+</div>
+
+<div class="collaboration-card">
+
+<h3>🎓 PhD & Academic Opportunities</h3>
+
+<p>
+
+Open to discussing funded PhD positions, postdoctoral collaborations and interdisciplinary research initiatives.
+
+</p>
+
+</div>
+
+</div>
+
+<a href="contact.html" class="contact-button">
+
+Get in Touch
+
+</a>
+
+</div>
+
+</section>
+
+<!--======================================================
+                RESEARCH AT A GLANCE
+=======================================================-->
+
+<section class="glance">
+
+<h2>Research at a Glance</h2>
+
+<div class="glance-grid">
+
+<div class="glance-card">
+
+<div class="glance-number">3</div>
+
+<div class="glance-title">
+
+Research Institutes
+
+</div>
+
+<p>
+
+Experience gained through multidisciplinary research at premier academic and government research institutions.
+
+</p>
+
+</div>
+
+<div class="glance-card">
+
+<div class="glance-number">20+</div>
+
+<div class="glance-title">
+
+Laboratory Techniques
+
+</div>
+
+<p>
+
+Hands-on expertise in microbiology, analytical chemistry, electrochemistry and computational biology.
+
+</p>
+
+</div>
+
+<div class="glance-card">
+
+<div class="glance-number">2</div>
+
+<div class="glance-title">
+
+Publications
+
+</div>
+
+<p>
+
+Peer-reviewed publications in international journals focused on environmental biotechnology and sensor development.
+
+</p>
+
+</div>
+
+<div class="glance-card">
+
+<div class="glance-number">6+</div>
+
+<div class="glance-title">
+
+Research Areas
+
+</div>
+
+<p>
+
+Environmental biotechnology, waste valorisation, microalgae, computational biology and sustainable bioprocesses.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--======================================================
+      PROFESSIONAL DEVELOPMENT & ACADEMIC ENGAGEMENT
+=======================================================-->
+
+<section class="engagement">
+
+<h2>Professional Development & Academic Engagement</h2>
+
+<div class="engagement-grid">
+
+<div class="engagement-card">
+
+<h3>Professional Development</h3>
+
+<ul>
+
+<li>Hands-on experience in multidisciplinary research projects.</li>
+
+<li>Scientific writing and peer-reviewed publications.</li>
+
+<li>Presentation of research findings.</li>
+
+<li>Interdisciplinary laboratory research.</li>
+
+<li>Analytical instrumentation and data interpretation.</li>
+
+<li>Research planning and project execution.</li>
+
+</ul>
+
+</div>
+
+<div class="engagement-card">
+
+<h3>Academic Engagement</h3>
+
+<ul>
+
+<li>Environmental Biotechnology</li>
+
+<li>Microbial Biotechnology</li>
+
+<li>Microalgal Biotechnology</li>
+
+<li>Computational Biology</li>
+
+<li>Bioprocess Engineering</li>
+
+<li>Circular Bioeconomy</li>
+
+<li>Sustainable Development Research</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Piyush Gurjar</h3>
+
+<p>
+
+Microbiologist | Environmental Biotechnology | Microalgal Biotechnology | Waste Valorisation
+
+</p>
+
+<div class="footer-social">
+
+<a href="https://www.linkedin.com/in/piyush-gurjar-007026311/" target="_blank">
+
+<img src="image/Linkedin.png" alt="LinkedIn" style="width:65px; height:65px;">
+
+</a>
+
+<a href="https://scholar.google.com/citations?user=6r19AZgAAAAJ&hl=en" target="_blank">
+
+<img src="image/Google Scholar.png" alt="Google Scholar">
+
+</a>
+
+<a href="https://orcid.org/0009-0009-3135-6695" target="_blank">
+
+<img src="image/ORCID_iD.png" alt="ORCID">
+
+</a>
+
+</div>
+
+<p>
+
+📧 piyushgurjar492@gmail.com
+
+</p>
+
+<p>
+
+📍 Lucknow, Uttar Pradesh, India
+
+</p>
+
+<p class="copyright">
+
+© 2026 Piyush Gurjar. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
